@@ -6,7 +6,7 @@ ThinkPHP6.0 Think-Template模板引擎驱动
 ## 安装
 
 ~~~
-composer require lascyb/topthink/think-view
+composer require lascyb/think-view
 ~~~
 
 ## 用法示例

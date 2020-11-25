@@ -14,10 +14,10 @@ namespace think\view\driver;
 
 use think\App;
 use think\helper\Str;
-use think\Template;
-use think\template\exception\TemplateNotFoundException;
+use lascyb\think\Template;
+use lascyb\think\template\exception\TemplateNotFoundException;
 
-class Think
+class Lascyb
 {
     // 模板引擎实例
     private $template;

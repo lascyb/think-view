@@ -1,8 +1,12 @@
 {
-    "name": "topthink/think-view",
+    "name": "lascyb/topthink/think-view",
     "description": "thinkphp template driver",
     "license": "Apache-2.0",
     "authors": [
+        {
+            "name": "lascyb",
+            "email": "lascyb@qq.com"
+        },
         {
             "name": "liu21st",
             "email": "liu21st@gmail.com"
@@ -10,7 +14,7 @@
     ],
     "require": {
     	"php": ">=7.1.0",
-        "topthink/think-template": "^2.0"
+        "lascyb/topthink/think-template": "^2.0"
     },
     "autoload": {
         "psr-4": {

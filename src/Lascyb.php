@@ -26,7 +26,7 @@ class Lascyb
     // 模板引擎参数
     protected $config = [
         //使用主题模板 -> 即在视图目录下，新增一层模板主题
-        "theme"              => false,
+        "theme"              => '',
         // 默认模板渲染规则 1 解析为小写+下划线 2 全部转换小写 3 保持操作方法
         'auto_rule'     => 1,
         // 视图目录名
@@ -47,8 +47,14 @@ class Lascyb
 
         $this->config = array_merge($this->config, (array) $config);
 
+        //默认缓存目录
         if (empty($this->config['cache_path'])) {
             $this->config['cache_path'] = $app->getRuntimePath() . 'temp' . DIRECTORY_SEPARATOR;
+        }
+
+        //添加主题模板
+        if (!empty($this->config['theme'])){
+            $this->config['view_dir_name']=$this->config['view_dir_name'].DIRECTORY_SEPARATOR.$this->config['theme'];
         }
 
         $this->template = new Template($this->config);

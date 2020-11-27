@@ -1,13 +1,21 @@
 # think-view
 
-ThinkPHP6.0 Think-Template模板引擎驱动
-
+- 基于 think-view 二次开发
+- 本扩展不能单独使用，依赖ThinkPHP6.0+
+- 具体的模板引擎配置请参考lascyb/think-template库。
 
 ## 安装
 
 ~~~
 composer require lascyb/think-view
 ~~~
+>>>---
+> 相关用法基本与think/think-view 相同
+>>>---
+
+# think-view
+
+ThinkPHP6.0 Think-Template模板引擎驱动
 
 ## 用法示例
 

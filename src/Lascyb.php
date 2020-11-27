@@ -200,11 +200,7 @@ class Lascyb
         } else {
             $path = $this->config['view_path'];
         }
-        //追加模板目录
-        if (isset($this->config['theme'])&&$this->config['theme']){
-            $path=$path.$this->config['theme'].DIRECTORY_SEPARATOR;
-        }
-
+        
         $depr = $this->config['view_depr'];
 
         if (0 !== strpos($template, '/')) {

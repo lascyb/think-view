@@ -51,12 +51,7 @@ class Lascyb
         if (empty($this->config['cache_path'])) {
             $this->config['cache_path'] = $app->getRuntimePath() . 'temp' . DIRECTORY_SEPARATOR;
         }
-
-        //添加主题模板
-        if (!empty($this->config['theme'])){
-            $this->config['view_dir_name']=$this->config['view_dir_name'].DIRECTORY_SEPARATOR.$this->config['theme'];
-        }
-
+        
         $this->template = new Template($this->config);
         $this->template->setCache($app->cache);
         $this->template->extend('$Think', function (array $vars) {

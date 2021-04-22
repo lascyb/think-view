@@ -14,7 +14,7 @@
     ],
     "require": {
     	"php": ">=7.1.0",
-        "lascyb/think-template": "^3.0.2"
+        "lascyb/think-template": "^3.1"
     },
     "autoload": {
         "psr-4": {
